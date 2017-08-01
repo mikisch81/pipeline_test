@@ -3,7 +3,7 @@
 node {
     checkout scm 
     /* .. snip .. */
-	stage('Build') {
+    stage('Build') {
         sh 'make --help' 
     }
 }
