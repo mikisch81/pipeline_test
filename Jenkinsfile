@@ -1,9 +1,9 @@
 #!/usr/bin/env groovy
 
-node {
-    checkout scm 
-    /* .. snip .. */
+node('esfs-builder') {
+    checkout scm
     stage('Build') {
-        sh 'make --help' 
+        sh 'make'
+        archiveArtifacts artifacts: '**/mikiApp', fingerprint: true
     }
 }
