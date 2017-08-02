@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-void main()
+int main()
 {
     printf("This is a pipeline test..\n");
+    return 0;
 }
